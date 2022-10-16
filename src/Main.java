@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         generateRandomArray();
@@ -49,11 +47,11 @@ public class Main {
     public static void Task3()    {
 
         int sum = 0;
-        double averageSum = 0;
+        float averageSum = 0;
         int[] arr = generateRandomArray();
         for (int value : arr) {
             sum += value;
-            averageSum = sum / arr.length;
+            averageSum = sum / (float)arr.length;
         }
         System.out.println("Средняя сумма трат за месяц составила " + averageSum + " рублей.");
 
@@ -64,8 +62,8 @@ public class Main {
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int i = reverseFullName.length - 1; i >= 0; i--) {
 
-                System.out.print(reverseFullName[i]);
-            }
+            System.out.print(reverseFullName[i]);
+        }
 
     }
 
