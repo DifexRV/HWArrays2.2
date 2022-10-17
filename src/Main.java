@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
         generateRandomArray();
-        Task1();
-        Task2();
-        Task3();
-        Task4();
+        task1();
+        task2();
+        task3();
+        task4();
     }
 
     public static int[] generateRandomArray() {
@@ -16,7 +16,7 @@ public class Main {
 
     }
 
-    public static void Task1()    {
+    public static void task1()    {
 
         int sum = 0;
         int[] arr = generateRandomArray();
@@ -27,7 +27,7 @@ public class Main {
 
     }
 
-    public static void Task2()    {
+    public static void task2()    {
 
         int[] arr = generateRandomArray();
         int minSpending = arr[0];
@@ -44,20 +44,19 @@ public class Main {
 
     }
 
-    public static void Task3()    {
+    public static void task3()    {
 
         int sum = 0;
-        float averageSum = 0;
         int[] arr = generateRandomArray();
-        for (int value : arr) {
-            sum += value;
-            averageSum = sum / (float)arr.length;
-        }
+            for (int value : arr) {
+                sum += value;
+                }
+        float averageSum = sum / (float)arr.length;
         System.out.println("Средняя сумма трат за месяц составила " + averageSum + " рублей.");
 
     }
 
-    public static void Task4()    {
+    public static void task4()    {
 
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int i = reverseFullName.length - 1; i >= 0; i--) {
